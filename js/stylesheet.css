@@ -1,0 +1,357 @@
+/*CSS Reset*/
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #F9F5EB;
+}
+/*Header Styling*/
+
+#top{
+    color:#EA5455;
+    text-align:center;
+    font-size:46px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* Navigation bar styling*/
+
+ img{
+    display:block;
+    width: 90px;
+    height:90px;
+    margin:auto;
+    margin-bottom: 3px;
+}
+
+/*Navbar Functionality*/
+#navbar{
+    display:flex;
+    flex-direction: column;
+    background-color: #002B5B;
+    height: 8vh;
+    width: 100vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top:10px;
+   border: 2px solid black;
+   border-radius:15px;
+}
+
+
+/*Navbar content functionality*/
+#navcontent{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Navbar content styling*/
+ul li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+ul li a{
+    font-size: 20px;
+    padding: 1px;
+    color:#EA5455;
+    text-decoration: none;
+    border-radius:10px;
+}
+ul li a:hover{
+    background-color: #F9F5EB;
+    border-radius: 10px;
+}
+
+/* website background image designing */
+#container1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height:63vh;
+    color: gray;
+}
+
+/*Setting the background image using before pseudo selector*/ 
+#container1::before{
+    content:'';
+    background: url("https://pcprd.azureedge.net/content/easy-ways-to-include-traditional-indian-ingredients-in-everyday-cooking-8397699120387.jpg") no-repeat center center/cover;
+    width: 100vw;
+    height:59vh;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right:45px;
+    font-weight: bold;
+    z-index: -1;
+    opacity: 0.89;
+    border: 2px solid black;
+    border-bottom-left-radius: 100px;
+}
+
+#row1{
+   color: #cf2c2c;
+    font-weight:bolder;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 35px;
+    background-color: #002B5B;
+}
+/*Button Styling*/
+.btn{
+    margin-top:15px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius:15px;
+    background-color:#002B5B;
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #EA5455;
+}
+
+
+#container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+#row2{
+    width:24vw;
+    height:21vh;
+    box-shadow: 2px 7px 16px 19px;
+     margin-top:51px;
+     margin-bottom: 51px;
+     display: flex;
+    justify-content: center;
+     align-items: flex-end;
+     position: relative;
+     margin-right: 38px;
+     border-radius: 40px;
+     
+}
+#row2::before{
+    content: '';
+    background: url(data:image/png;base64,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) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 24vw;
+    height:21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+#row3{
+    position: relative;
+    width: 24vw;
+    height:21vh;
+    display: flex;
+    justify-content: center;
+     align-items: flex-end;
+     box-shadow: 2px 7px 16px 19px;
+     margin-top:51px;
+     margin-bottom: 51px;
+     
+     margin-left: 38px;
+     border-radius: 40px;
+}
+#row3::before{
+    content: '';
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqdyE9_yYJ8pgWS4QbsJ1oCLZFLGxN6WCQGrcTvB9YMjFq6qP_8RwSZ4EKoDwAvQEOQ5Q&usqp=CAU) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 24vw;
+    height:21vh;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+#top3{
+    text-align: center;
+    color:red;
+    font-family: 'Ubuntu Mono', monospace;
+}
+#container4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
+}  
+#row4{
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('a1.jpeg') no-repeat center center/cover; 
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row5{
+    width: 29vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('a2.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+#row6{
+    width: 30vw;
+    height: 360px;
+    border: 2px solid black;
+    background:url('a3.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+}
+/*Designing the footer*/
+footer{
+    text-align: center;
+}
+/*Designing of Contact Us*/
+#ContactUs{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+}
+.form-shape input, .form-shape select, .form-shape textarea{
+   width: 92%;
+   padding: 0.5rem;
+}
+/*Changing the color of placeholder*/
+::placeholder{                  
+    color:gray;
+}
+/*Making the webpage responsive using media queries*/
+@media only screen and (max-width:1131px){
+    #row4{
+        width: 42vw;
+    }
+    #row5{
+        width:45vw;
+    }
+    #row6{
+        margin-top: 20px;
+        width:90vw;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:781px)
+{
+    #row4{
+        width:84vw;
+        margin: auto;
+        margin-left: 22px;
+    }
+    #row5{
+        
+        width:84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+    #row6{
+        width:84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+}
+@media only screen and (max-width:600px){
+    #row4{
+        width:78vw;
+        margin: auto;
+        margin-left: 3px;
+    }
+    #row5{
+        
+        width:78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    #row6{
+        width:78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+}
+@media only screen and (min-height:1000px){
+    #navbar{
+        height:10vh;
+    }
+    #container1::before{
+        height:39vh;
+    }
+    #container1{
+        height:44vh
+    }
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
